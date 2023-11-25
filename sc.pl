@@ -191,10 +191,10 @@ troubleFar(S1,S2,S3,S4,S5,S6,S7):-
 nearbyClearly(S1,S2,S3,S4,S5,S6,S7,S8):-
     writeln("Can you see things that are nearby more clearly than things thar are further away?"),
     write("Enter yes/no: "),
-    read(S8), nl,
+    read(S9), nl,
     (
-        not(S8 == 'yes'), not(S8 == 'no') -> writeln("Invalid input."), nearbyClearly(S1,S2,S3,S4,S5,S6,S7,S8);
-        (S8 == 'yes') -> t4(S1,S2,S3,S4,S5,S6,S7,S8,S9); f1
+        not(S9 == 'yes'), not(S9 == 'no') -> writeln("Invalid input."), nearbyClearly(S1,S2,S3,S4,S5,S6,S7,S8);
+        (S9 == 'yes') -> t4(S1,S2,S3,S4,S5,S6,S7,S8,S9); f1
     ).
 
 watery_eyes(S1,S2):-
